@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+.container{
+    max-width:1360px
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-center{
+    text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.clr-red{
+    color:tomato;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.clr-green{
+    color:rgb(55, 214, 7)
 }
-
-.App-link {
-  color: #61dafb;
+button, input{
+    outline: none !important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label{
+    width:100%;
+    cursor: pointer;
+    margin: 0;
 }
+label:hover .parent {
+    background-color: #46d668 !important;
+}
+.MuiTextField-root{
+    max-width: 160px;
+}
+.MuiTextField-root label{
+   display: none;
+}
+.MuiTextField-root,
+.MuiFormControl-marginNormal,
+.MuiInput-formControl{
+    margin: 0 !important;
+}
+.show-btn{
+    display:none;
+    cursor: pointer;
+    color: rgb(38, 23, 243);
+}
+.hide{
+    display: none ;
+}
+ @media screen and (max-width: 767px) {
+     .hide-for-mobile{
+         display: none;
+     }
+     .show-for-mobile{
+        display: block;
+     }
+     h5{
+        font-size: 16px;
+     }
+ }

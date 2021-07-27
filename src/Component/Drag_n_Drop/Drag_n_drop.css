@@ -1,0 +1,7 @@
+.boxes{
+        border-radius: 5px;
+        width: 30%;
+        height: 100px;
+        margin: 10px;
+        cursor:move;
+}
